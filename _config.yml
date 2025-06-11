@@ -131,7 +131,8 @@ scroll_smooth: true
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    # img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img: /images/logo.png 
     icon:
     title:
   menu:
@@ -165,43 +166,43 @@ cover:
     home: true
     archive: true
     others: false # can be written in front-matter 'cover: true'
-  background: https://gcore.jsdelivr.net/gh/MHG-LAB/cron@gh-pages/bing/bing.jpg
+  background: /images/bg.png
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
-  title: 'Volantis'
-  subtitle: ''
-  search: A Wonderful Theme for Hexo # search bar placeholder
-  features:
-    - name: 文档
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
-      url: /v4/getting-started/
-    - name: 帮助
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
-      url: faqs/
-    - name: 示例
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f396.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
-      url: /examples/
-    - name: 社区
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f389.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg
-      url: /contributors/
-    - name: 博客
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
-      url: /archives/
-    - name: 源码
-      icon: #
-      img: volantis-static/media/twemoji/assets/svg/1f9ec.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
-      url: https://github.com/volantis-x/hexo-theme-volantis/
+  title: '夹缝中的AI编程者'
+  subtitle: '从传统编程到AI编程，一刻不停的疲于奔命'
+  search: 搜索文章、标签、分类等 # search bar placeholder
+  # features:
+  #   - name: 文档
+  #     icon: #
+  #     img: volantis-static/media/twemoji/assets/svg/1f5c3.svg # https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg
+  #     url: /v4/getting-started/
+  #   - name: 帮助
+  #     icon: #
+  #     img: volantis-static/media/twemoji/assets/svg/1f516.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg
+  #     url: faqs/
+  #   - name: 示例
+  #     icon: #
+  #     img: volantis-static/media/twemoji/assets/svg/1f396.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg
+  #     url: /examples/
+  #   - name: 社区
+  #     icon: #
+  #     img: volantis-static/media/twemoji/assets/svg/1f389.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg
+  #     url: /contributors/
+  #   - name: 博客
+  #     icon: #
+  #     img: volantis-static/media/twemoji/assets/svg/1f4f0.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg
+  #     url: /archives/
+  #   - name: 源码
+  #     icon: #
+  #     img: https://raw.githubusercontent.com/Remix-Design/RemixIcon/master/icons/System/book-line.svg #  https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg
+  #     url: https://github.com/volantis-x/hexo-theme-volantis/
 ############################### Cover ############################### > end
 
 pages:
   # 友链页面配置
   friends:
-    layout_scheme: traditional # simple: 简单布局, traditional: 传统布局
+    layout_scheme: simple # simple: 简单布局, traditional: 传统布局
     link_block_color:
       enable: false #友链块颜色开关，用 color: '颜色' 字段
       unified_font: false # 是否统一友链块文字，true则所有文字都会成黑，false只有
@@ -411,14 +412,15 @@ comments:
   # https://github.com/laymonage/giscus
   giscus:
     # 以下配置按照 yml 格式增删填写即可
-    # repo: xxx/xxx
-    # repo-id: xxx
-    # category: xxx
-    # category-id: xxx
-    # mapping: "pathname"
-    # reactions-enabled: "1"
-    # emit-metadata: "0"
-    # lang: "zh-CN"
+    repo: he0xwhale/ai_blog
+    repo-id: R_kgDOOy_oHw
+    category: Announcements
+    category-id: DIC_kwDOOy_oH84CrUlf
+    mapping: pathname
+    reactions-enabled: "1"
+    emit-metadata: "0"
+    lang: "zh-CN"
+    input-position: top
     # 以上配置按照 yml 格式增删填写即可
     theme:
       light: "light" # https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/css/giscus/light.css
@@ -566,21 +568,22 @@ sidebar:
     blogger:
       class: blogger
       display: [desktop, mobile] # [desktop, mobile]
-      avatar: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      # avatar: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+      avatar: /images/logo_2.png
       shape: rectangle # circle, rectangle
       url: /about/
       title:
       subtitle:
-      jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
+      jinrishici: '昼夜兼程敲代码，浮沉浪里写春秋。' 
+      # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
         - icon: fa-solid fa-rss
           url: /atom.xml
         - icon: fa-solid fa-envelope
-          url: mailto:me@xxx.com
+          url: mailto:he0xwhale@gmail.com
         - icon: fab fa-github
-          url: https://github.com/volantis-x/
-        - icon: fa-solid fa-headphones-alt
-          url: /
+          url: https://github.com/he0xwhale/
+
     # ---------------------------------------
     # toc widget (valid only in articles)
     toc:
@@ -737,7 +740,7 @@ site_footer:
     <span>本站总访问量为 <span id='busuanzi_site_pv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
     <span>访客数为 <span id='busuanzi_site_uv'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   # site copyright
-  copyright: '[Copyright © since 2017 XXX](/)'
+  copyright: '[Copyright © since 2025 AI Whale](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Site Footer ############################### > end
@@ -748,7 +751,7 @@ plugins:
   # jquery
   globalJquery: false # 全局引入 jquery
   # fontawesome
-  fontawesome: true
+  fontawesome: false
   ################ optional plugins ################
   # issues api
   sitesjs:
@@ -1371,3 +1374,17 @@ structured_data:
       width: 192
       height: 192
 ############################### Structured Data ############################### > end
+
+
+custom_file:
+  styl: source/css/_custom/custom.styl
+
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/all.min.css">
+
+favicon:
+  small: /favicon.png
+  medium: /favicon.png
+  apple_touch_icon: /apple-touch-icon.png
+  safari_pinned_tab: /favicon.png

@@ -7,8 +7,8 @@ post:
   pin: Top
   readmore: Read More
   readoriginal: Read Original
-  wordcount: '%s words'
-  duration: '%s min'
+  wordcount: "%s words"
+  duration: "%s min"
   comments: Comments
   comments_load: Load %s
   comments_check: Checking if %s is accessible...
@@ -30,9 +30,9 @@ post:
     license: License
 
 footer:
-  license: 'Blog content follows the [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)'
-  use: Use
-  theme: as theme
+  license: "Blog content follows the [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)"
+  # use: Use
+  # theme: as theme
   total_views: total visits
   total_visitors: total visitors
   times: times
@@ -56,4 +56,4 @@ search:
   title: Search
   load_data: Loading the Database
   hits_empty: "We didn't find any results for the search: ${query}."
-  hits_stats: '${hits} results found in ${time} ms'
+  hits_stats: "${hits} results found in ${time} ms"

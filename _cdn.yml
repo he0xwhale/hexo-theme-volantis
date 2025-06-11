@@ -113,7 +113,7 @@ fontawesome:
   version: 6.6.0
   npm: true
   static: true
-  cdnjs: true
+  cdnjs: false
 katex_js:
   name: katex
   cdnjs_name: KaTeX
@@ -158,7 +158,7 @@ marked:
   version: 14.1.2
   npm: true
   static: true
-  cdnjs: true
+  cdnjs: false
 hlsjs:
   name: hls.js
   file: dist/hls.min.js
@@ -214,7 +214,7 @@ scrollreveal:
 nodewaves_css:
   name: node-waves
   file: dist/waves.min.css
-  version: 0.7.6 
+  version: 0.7.6
   npm: true
   static: true
   cdnjs: true
