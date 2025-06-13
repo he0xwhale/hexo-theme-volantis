@@ -231,7 +231,7 @@ article:
   body:
     # 文章顶部信息
     # 从 meta_library 中取
-    top_meta: [author, category, date, counter] #启用评论数量需在此添加
+    top_meta: [author, category, date,wordcount ,counter] #启用评论数量需在此添加
     # 文章底部信息
     # 从 meta_library 中取
     bottom_meta: [updated, tags, share]
@@ -652,7 +652,7 @@ sidebar:
           text: '已运行时间：'
           unit: '天'
         wordcount:
-          enable: false
+          enable: true
           text: '本站总字数：'   # 需要启用 wordcount
           unit: '字'
         visitcounter:
@@ -815,10 +815,10 @@ plugins:
   ######## Plugins for Count:
   # npm i hexo-wordcount
   wordcount:
-    enable: #true
+    enable: true
 
   busuanzi:
-    enable: #true
+    enable: true
 
   ######## Plugins for ...
   # Button Ripple Effect
