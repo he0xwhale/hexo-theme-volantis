@@ -723,7 +723,7 @@ tag_plugins:
 ############################### Site Footer ############################### > start
 site_footer:
   # layout of footer: [aplayer, social, license, info, copyright]
-  layout: [aplayer, social, license, info, copyright]
+  layout: [aplayer, social, license, copyright]
   social:
     - icon: #fa-solid fa-rss
       url:
@@ -1348,15 +1348,16 @@ seo:
 # https://ogp.me/
 # https://hexo.io/zh-cn/docs/helpers#open-graph
 open_graph:
-  image: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
-  twitter_card: summary # summary_large_image , summary
+  # image: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+  image: /images/seo/og_seo.png 
+  twitter_card: summary_large_image # summary_large_image , summary
   #twitter_id:
   #twitter_site:
 ############################### Open Graph ############################### > end
 
 ############################### Structured Data ############################### > start
 # SEO 入门文档: https://developers.google.com/search/docs
-# https://schema.org.cn/
+# https://schema.org/
 # 结构化数据用于更改搜索结果的显示效果
 # 目前内置的结构化数据: blogposting, breadcrumblist, organization, person, website
 # 目前内置的富媒体搜索结果: 路径(面包屑导航), 徽标(Logo), 站点链接搜索框(SearchAction)
@@ -1364,13 +1365,17 @@ open_graph:
 # 富媒体搜索结果测试: https://search.google.com/test/rich-results
 structured_data:
   enable: true
+  context: https://schema.org
   # 以下是覆盖配置, 默认配置见 scripts/helpers/structured-data/lib/config.js
   data:
     person:
+      name: he0xwhale
+      url: https://ai.he0xwhale.xyz
+      image: /images/seo/logo_seo.png
       sns:
-        - https://github.com/volantis-x
+        - https://github.com/he0xwhale
     logo:
-      path: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/favicon/android-chrome-192x192.png
+      path: /images/seo/logo_seo.png 
       width: 192
       height: 192
 ############################### Structured Data ############################### > end
