@@ -154,6 +154,8 @@ navbar:
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
+    - English: /en/
+      
   search: Search...   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
 
@@ -1405,3 +1407,7 @@ widgets:
     - donate
   page:
     - webinfo
+language: zh-CN # 默认语言
+i18n:
+  zh-CN: 简体中文
+  en: English
